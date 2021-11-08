@@ -110,12 +110,6 @@
      border-radius: 5px;
      padding:2px;
    }
-   button:hover{
-     background-color: rgb(190, 245, 242);
-     color: white;
-     transition: .5s;
-     cursor: pointer;
-   }
    .newsfeed{
        padding: 0 30px;
       
@@ -202,33 +196,28 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-      
+        <div>
+          <a href="combine_profile.html"><i class="glyphicon glyphicon-home" style="font-size: 30px; color: black;"></i></a>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Friend List <span class="sr-only"></span></a>
-            </li>
-            <div style="display: inline-block; margin-left: 20px; ">
-              <form class="d-flex">
-                  <input class="form-control md-2" type="text" placeholder="Search" >
-                  <button class="btn " style="height: 35px; margin-top:7px ; margin-left: 4px; " type="button" >Search</button>
-                </form>
+          <div style="display: inline-block; margin-left: 20px; ">
+            <form class="d-flex" style="margin-top:30px ;">
+                <input class="form-control md-2" type="text" placeholder="Search" style="margin-left: 250px;" >
+                <a href="search_friend.html"><span class="glyphicon glyphicon-search" style="margin-top: 15px;margin-left: 5px; font-size: 20px;color: black;"></span></a>                
+              </form>
+        </div>
+        <div class="dropdown" style="margin-left: 850px; bottom: 38px;">
+          <button class="btn btn-primary dropdown-toggle" type="button" style="margin-top: 0% auto; color: black;"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top:0px;">
+            Profile
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="about_me_dummy.html">About Me</a>
+            <a class="dropdown-item" href="Prefernces_Page.html">Preferences</a>
+            <a class="dropdown-item" href="friend_list.html">Friend List</a>
+            <a class="dropdown-item" href="welcome.html">Log-out</a>
           </div>
-        
-            </li>  
-            </ul>
-            <div class="dropdown" style="display: block; margin-top: 5px;" >
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-left: 190px; color: black;">
-                Profile
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="margin-left: 900px;">
-                <a class="dropdown-item" href="about_me_dummy.html">About Me</a>
-                <a class="dropdown-item" href="Prefernces_Page.html">Preferences</a>
-                <a class="dropdown-item" href="friend_list.html">Friend List</a>
-                <a class="dropdown-item" href="welcome.html">Log-out</a>
-
-              </div>
-            </div> 
+        </div>
+  
       </nav>
 <!--navbar complete-->
     <div class="container-fluid">
@@ -239,8 +228,8 @@
                     <div class="card-body">
                         <h3 class="h">Profile</h3>
                         <hr>
-                        <center><img class="image1" src="image/megha.jpeg"></center>
-                        <h4 class="hyper">Megha Mathur</h4>
+                        <center><img class="image1" src="image/female.png"></center>
+                        <h4 class="hyper">Chhavi Jain</h4>
                         <hr>
                         <h5>Friends</h5>
                         <hr>
@@ -253,13 +242,7 @@
             <!--left side complete-->
             <div class="col-sm-4"> 
               <div class="container-fluid">
-              <div style="display: inline-block;  ">
-                <form class="d-flex" style="margin-left:250px; ">
-                    <input type="text" placeholder="What's on your Mind??" style="width: 300px; border-radius: 50px;" >
-                    <button class="btn btn-primary" style="height: 35px; width: 100px; background-color: rgb(232, 212, 252); color: black;" type="button" >Post</button>
-
-                  </form>
-            </div>
+              
             <div class="container-fluid"> 
             <div class="card" style="width: 500px; margin-left: 280px; right: 110px; margin-top: 20px; height: 450px;">
               <div class="card-header" style="font-weight: bold;">
@@ -290,7 +273,7 @@
             <div class="col-sm-4">
             <div class="side">
             <div class="col-lg-6 mb-4">
-            <div class="card" style="align-items: top; margin-left: 750px;  display: flex;  width: 250px; bottom: 520px;" >
+            <div class="card" style="align-items: top; margin-left: 730px;  display: flex;  width: 250px; bottom: 480px;" >
                 <div class="scroll">
                   <medium>Ads</medium>
                   <h5 class="card-title"  >Great India Festival</h5>
@@ -312,7 +295,7 @@
             </div>
 
               <div class="col-lg-6 mb-4">
-                <div class="card" style="align-items: top; margin-left: 750px;  display: flex;  width: 250px; bottom: 530px ;" >
+                <div class="card" style="align-items: top; margin-left: 730px;  display: flex;  width: 250px; bottom: 480px ;" >
                   <div class="scroll">
                     <medium>Suggestion Ads</medium>
                     <h5 class="card-title"  >Great India Festival</h5>

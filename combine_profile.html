@@ -110,12 +110,7 @@
      border-radius: 5px;
      padding:2px;
    }
-   button:hover{
-     background-color: rgb(190, 245, 242);
-     color: white;
-     transition: .5s;
-     cursor: pointer;
-   }
+   
    .newsfeed{
        padding: 0 30px;
       
@@ -203,15 +198,18 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div>
+          <a href="combine_profile.html"><i class="glyphicon glyphicon-home" style="font-size: 30px; color: black;"></i></a>
+        </div>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div style="display: inline-block; margin-left: 20px; ">
               <form class="d-flex" style="margin-top:30px ;">
                   <input class="form-control md-2" type="text" placeholder="Search" style="margin-left: 250px;" >
-                  <button class="btn " style="height: 35px; margin-top: 8px;width: 70px;  margin-left: 4px; " type="button" >Search</button>
+                  <a href="search_friend.html"><span class="glyphicon glyphicon-search" style="margin-top: 15px;margin-left: 5px; font-size: 20px; color: black;"></span></a>
                 </form>
         </div>
-        <div class="dropdown" style="margin-left: 900px;bottom: 38px;">
+        <div class="dropdown" style="margin-left: 850px;bottom: 38px;">
           <button class="btn btn-primary dropdown-toggle" type="button" style="margin-top: 0% auto; color: black;"id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin-top:0px;">
             Profile
           </button>
@@ -235,7 +233,7 @@
                     <div class="card-body">
                         <h3 class="h">Profile</h3>
                         <hr>
-                        <center><img class="image1" src="image\chhavi.jpeg"></center>
+                        <center><img class="image1" src="image\female.png"></center>
                         <h4 class="hyper">Chhavi Jain</h4>
                         <hr>
                         <h5>Friends</h5>
@@ -262,75 +260,16 @@
                   </form>
             </div>
           
-            <div class="card2" style="margin-top: 0px; margin-left: 160px; width: 500px; height:2450px;margin-top: 10px;">
+            <div class="card2" style="margin-top: 0px; margin-left: 160px; width: 500px; margin-top: 10px;">
               <section class="newsfeed">
-              <div class="card2">
-                  <div class="picture">
-                      <img src="/image/img2.jpg" alt="" style="width: 100%; height: 60%;">
-                  </div>
-                  <div class="content" style="background-color: white;">
-                      <div class="header">
-                       <div class="profile-pic" style="background-image:url(/image/img2.jpg);
-                       background-position: 50%;
-                       background-size: cover;
-                       height: 50px;
-                       width: 50px;
-                       border-radius: 50%; ;"></div>
-                        <div class="details">
-                            <p class="name" style="font-weight: bold;">Naman Madharia</p>
-                            <p class="posted">2 hours ago</p>
-       
-                        </div>
-                        </div>
-       
-                      <div class="desc">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam officia in nam doloribus, inventore ullam possimus laudantium delectus obcaecati?
-                      </div>
-                      
-                      <div class="tags" style="text-align: center; color: crimson;">
-                          <span>#party</span>
-                          <span>#colorfull</span>
-                      </div>
-                      <div class="footer" style="display: inline-flex;">
-                          <div class="like">
-                              <i class="glyphicon glyphicon-heart"></i>
-                              <span>12k</span>
-                          </div>
-                          <div class="comment" style="margin-left: 90px;">
-                              <i class="glyphicon glyphicon-comment"></i>
-                              <span>9k</span>
-                          </div>
-                          <div class="share">
-                              <i class="glyphicon glyphicon-share"></i>
-                              <span>8k</span>
-                          </div>
-               
-                      </div>
-                  </div>
-              </div>
-              <div class="title">
-            
-              </div>
-              <div class="des">
               
               <div class="card2">
-                  <div class="picture">
-                      <img src="/image/img1.jpg" alt="" style="width: 100%; height: 60%;">
-                  </div>
-                  <div class="content">
-                      <div class="header">
-                       <div class="profile-pic" style="background-image:url(/image/img1.jpg);
-                       background-position: 50%;
-                       background-size: cover;
-                       height: 50px;
-                       width: 50px;
-                       border-radius: 50%; ;"></div>
                         <div class="details">
                             <p class="name" style="font-weight: bold;">Pranjali Sharma</p>
                             <p class="posted">1 hours ago</p>
        
                          </div>
-                      </div>
+                      
        
                       <div class="desc">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam officia in nam doloribus, inventore ullam possimus laudantium delectus obcaecati?
@@ -345,41 +284,57 @@
                               <i class="glyphicon glyphicon-heart"></i>
                               <span>15k</span>
                           </div>
-                          <div class="comment">
-                              <i class="glyphicon glyphicon-comment"></i>
-                              <span>10k</span>
-                          </div>
-                          <div class="share">
-                              <i class="glyphicon glyphicon-share"></i>
-                              <span>12k</span>
-                          </div>
-               
+                          <div class="edit">
+                            <i class='glyphicon glyphicon-edit' style="margin-right: 40px;"></i>
+                           </div>
+                           <div class="delete">
+                            <i class="glyphicon glyphicon-trash" style="margin-right: 10px;"></i>
+        
+                           </div>
+                           
                       </div>
-                  </div>
+                  
               </div>
-              <div class="title">
-            
-              </div>
-              <div class="des">
-              
               <div class="card2">
-                  <div class="picture">
-                      <img src="/image/img3.jpg" alt="" style="width: 100%; height: 60%;">
+                <div class="details">
+                    <p class="name" style="font-weight: bold;">Naman Madharia</p>
+                    <p class="posted">1 hours ago</p>
+
+                 </div>
+              
+
+              <div class="desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam officia in nam doloribus, inventore ullam possimus laudantium delectus obcaecati?
+              </div>
+              
+              <div class="tags">
+                  <span>#party</span>
+                  <span>#colorfull</span>
+              </div>
+              <div class="footer">
+                  <div class="like">
+                      <i class="glyphicon glyphicon-heart"></i>
+                      <span>15k</span>
                   </div>
-                  <div class="content">
-                      <div class="header">
-                       <div class="profile-pic" style="background-image:url(/image/img3.jpg);
-                       background-position: 50%;
-                       background-size: cover;
-                       height: 50px;
-                       width: 50px;
-                       border-radius: 50%; ;"></div>
+                  <div class="edit">
+                    <i class='glyphicon glyphicon-edit' style="margin-right: 40px;"></i>
+                   </div>
+                   <div class="delete">
+                    <i class="glyphicon glyphicon-trash" style="margin-right: 10px;"></i>
+
+                   </div>
+                   
+              </div>
+          
+      </div>
+      
+              <div class="card2">
                         <div class="details">
                             <p class="name" style="font-weight: bold;">Megha Mathur</p>
                             <p class="posted">5 hours ago</p>
        
                          </div>
-                      </div>
+                      
        
                       <div class="desc">
                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aperiam officia in nam doloribus, inventore ullam possimus laudantium delectus obcaecati?
@@ -394,17 +349,16 @@
                               <i class="glyphicon glyphicon-heart"></i>
                               <span>10k</span>
                           </div>
-                          <div class="comment">
-                              <i class="glyphicon glyphicon-comment"></i>
-                              <span>13k</span>
-                          </div>
-                          <div class="share">
-                              <i class="glyphicon glyphicon-share"></i>
-                              <span>12k</span>
-                          </div>
-               
+                          <div class="edit">
+                            <i class='glyphicon glyphicon-edit' style="margin-right: 40px;"></i>
+                           </div>
+                           <div class="delete">
+                            <i class="glyphicon glyphicon-trash" style="margin-right: 10px;"></i>
+        
+                           </div>
+                           
                       </div>
-                  </div>
+                
               </div>
               </div>
                  
@@ -416,7 +370,7 @@
             <div class="col-sm-4">
             <div class="side">
             <div class="col-lg-6 mb-4">
-            <div class="card" style="align-items: top; margin-left: 480px;  display: flex; bottom: 2465px; width: 250px; " >
+            <div class="card" style="align-items: top; margin-left: 700px;  display: flex; bottom: 730px; width: 250px; " >
                 <div class="scroll">
                   <medium>Ads</medium>
                   <h5 class="card-title"  >Great India Festival</h5>
@@ -438,7 +392,7 @@
             </div>
             <!--Ad suggestions-->
               <div class="col-lg-6 mb-4">
-                <div class="card" style="align-items: top; margin-left: 420px;  display: flex; bottom: 2200px; width: 250px;" >
+                <div class="card" style="align-items: top; margin-left: 700px;  display: flex; bottom: 730px; width: 250px;" >
                   <div class="scroll">
                     <medium>Suggestion Ads</medium>
                     <h5 class="card-title"  >Great India Festival</h5>
